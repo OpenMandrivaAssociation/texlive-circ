@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/generic/diagrams/circ
+# catalog-date 2006-12-31 18:14:50 +0100
+# catalog-license gpl
+# catalog-version 1.1
 Name:		texlive-circ
 Version:	1.1
 Release:	1
@@ -74,6 +80,7 @@ better.
 %doc %{_texmfdistdir}/source/latex/circ/circ.drv
 %doc %{_texmfdistdir}/source/latex/circ/circ.dtx
 %doc %{_texmfdistdir}/source/latex/circ/circ.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -84,3 +91,5 @@ better.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
