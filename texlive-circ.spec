@@ -1,19 +1,13 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/generic/diagrams/circ
-# catalog-date 2006-12-31 18:14:50 +0100
-# catalog-license gpl
-# catalog-version 1.1
 Name:		texlive-circ
-Version:	1.1
-Release:	12
+Version:	62977
+Release:	1
 Summary:	Macros for typesetting circuit diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/circ
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.r62977.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.doc.r62977.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.source.r62977.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,12 +24,12 @@ optic package, or the MetaPost makecirc package does the job
 better.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -73,25 +67,11 @@ better.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-2
-+ Revision: 750229
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
-+ Revision: 718060
-- texlive-circ
-- texlive-circ
-- texlive-circ
-- texlive-circ
-- texlive-circ
-
