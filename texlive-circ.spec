@@ -5,9 +5,9 @@ Summary:	Macros for typesetting circuit diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/circ
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.r62977.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.doc.r62977.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.source.r62977.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
