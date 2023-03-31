@@ -1,6 +1,6 @@
 Name:		texlive-circ
 Version:	62977
-Release:	1
+Release:	2
 Summary:	Macros for typesetting circuit diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/circ
