@@ -3,7 +3,7 @@ Version:	62977
 Release:	2
 Summary:	Macros for typesetting circuit diagrams
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/circ
+URL:		https://www.ctan.org/tex-archive/macros/generic/diagrams/circ
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/circ.doc.r%{version}.tar.xz
